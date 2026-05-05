@@ -289,7 +289,7 @@ startup
                 // Suburbs
                 {"mg_suburbs", "——Suburb", null, "mg_thesuburbs", true},
                     {"sub-sniper-start-EBADA5168620C5FE-restartcheckpoint", "RC When dropping in sniper street", null, "mg_suburbs", false},
-                    {"sub-sniper-chase-start-EBADA5168620C5FE-restartcheckpoint", "RC Sniper death, during black screen", "After killing that annoying sniper", "mg_suburbs", false},
+                    {"sub-sniper-chase-start-EBADA5168620C5FE-DISABLE BECAUSE I'M NOT ABLE TO MAKE IT ONLY SPLIT WHEN RC BECAUSE THERE IS A LOADING SCREEN DURING THE BLACK SCREEN-restartcheckpoint", "RC Sniper death, during black screen DONT WORK", "After killing that annoying sniper", "mg_suburbs", false},
                     {"sub-sniper-outro-EBADA5168620C5FE", "Suburbs completion", "When the final cutscene is trigger", "mg_suburbs", true},
             // TOMMY'S DAM
             {"mg_dam", "Tommy's Dam", null, "main_game", true},
@@ -685,7 +685,7 @@ split
         ){
             vars.splitted.Add(baseIdSplit + "-restartcheckpoint");
             //print("----Splitted main game split----Restart RC----");
-            if (vars.adjustedTime > 1){
+            if (vars.adjustedTime > 0){
                 return true;
             }
         }
