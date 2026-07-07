@@ -245,7 +245,7 @@ startup
                     {"bil-residential-backyards-start-EBADA5168620C5FE", "After the first encounter", "After exiting the graveyard area", "mg_graveyard", false},
                     {"bil-residential-house-EBADA5168620C5FE-restartcheckpoint", "RC House backyard", "After jumping from the plank into the house backyard, pre-highschool encounter", "mg_graveyard", false},
                     {"bil-residential-street-start-EBADA5168620C5FE-restartcheckpoint", "RC Outside HighSchool fight start", null, "mg_graveyard", false},
-                    {"bill-no-battery-EBADA5168620C5FE", "Graveyard completion", "When the Highschool window cutscene trigger", "mg_graveyard", false},
+// Missing line
                     {"bill-no-battery-EBADA5168620C5FE", "Graveyard completion", "When the Highschool window cutscene trigger", "mg_graveyard", true},
                 // High school escape
                 {"mg_highschoolescape", "——High school escape", null, "mg_bill", true},
