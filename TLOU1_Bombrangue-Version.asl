@@ -192,7 +192,8 @@ startup
                     {"mil-split-ways-EBADA5168620C5FE",                                                                                              "CSMeet Ellie", "When cutscene trigger", "mg_thecargo", false},
                     {"mil-north-tunnel-push-pull-start-EBADA5168620C5FE",                                                                            "Garbage bin puzzle start", null, "mg_thecargo", false},
                     {"mil-north-tunnel-push-pull-end-EBADA5168620C5FE",                                                                              "Bridge tunnel start", "Before crossing the bridge", "mg_thecargo", false},
-                    {"mil-ellie-joel-moment-a-EBADA5168620C5FE",                                                                                     "The cargo completion", "After reaching the meeting point, when cutscene trigger", "mg_thecargo", true},
+                    {"mil-ellie-joel-moment-a-EBADA5168620C5FE",                                                                                     "The cargo completion", "After reaching the meeting point, when cutscene trigger", "mg_thecargo", false},
+                    {"out-wasteland-elevator-start-EBADA5168620C5FE",                                                                                "The cargo completion (After skip)", "After reaching the meeting point, after cutscene is skipped", "mg_thecargo", true},
             
             // THE OUTSKIRTS
             {"mg_outskirts", "The Outskirts", null, "main_game", true},
@@ -216,7 +217,8 @@ startup
                     {"out-downtown-tilted-building-infected-basement-start-EBADA5168620C5FE-restartcheckpoint", "RC Enterring the subway", "During the drop", "mg_downtown", false},
                     {"out-downtown-tilted-building-infected-basement-sneak-EBADA5168620C5FE-restartcheckpoint", "RC Subway fight start", null, "mg_downtown", false},
                     {"out-downtown-tilted-building-subway-EBADA5168620C5FE", "Subway section cleared", "After leaving the subway area", "mg_downtown", false},
-                    {"out-loading-dock-lift-door-outro-EBADA5168620C5FE", "Downtown completion", "When cutscene the lift gate cutscene trigger", "mg_downtown", true},
+                    {"out-loading-dock-lift-door-outro-EBADA5168620C5FE", "Downtown completion", "When cutscene the lift gate cutscene trigger", "mg_downtown", false},
+                    {"out-downtown-state-house-loading-dock-EBADA5168620C5FE", "Downtown completion (After skip)", "After cutscene the lift gate cutscene is skipped", "mg_downtown", true},
                 // The museum
                 {"mg_themuseum", "——The museum", null, "mg_outskirts", true},
                     {"out-tess-grapple-EBADA5168620C5FE", "CS Tess Grapple", "When cutscene trigger", "mg_themuseum", false},
@@ -232,21 +234,25 @@ startup
                 // The woods
                 {"mg_thewoods", "——The woods", null, "mg_bill", true},
                     {"bil-warehouse-snare-intro-EBADA5168620C5FE", "Upside down fight start", "When opening the door", "mg_thewoods", false},
-                    {"bill-enter-safehouse-EBADA5168620C5FE", "The woods completion", "When the safehouse cutscene at the bar trigger", "mg_thewoods", true},
+                    {"bill-enter-safehouse-EBADA5168620C5FE", "The woods completion", "When the safehouse cutscene at the bar trigger", "mg_thewoods", false},
+                    {"bil-bar-start-EBADA5168620C5FE", "The woods completion (After skip)", "After the safehouse cutscene is skipped", "mg_thewoods", true},
                 // Safehouse
                 {"mg_safehouse", "——Safehouse", null, "mg_bill", true},
-                    {"bill-get-guns-EBADA5168620C5FE", "Safehouse completion", "When the entering church basement cutscene trigger", "mg_safehouse", true},
+                    {"bill-get-guns-EBADA5168620C5FE", "Safehouse completion", "When the entering church basement cutscene trigger", "mg_safehouse", false},
+                    {"bil-church-start-EBADA5168620C5FE", "Safehouse completion (After skip)", "When the entering church basement after skipping cutscene", "mg_safehouse", true},
                 // Graveyard
                 {"mg_graveyard", "——Graveyard", null, "mg_bill", true},
                     {"bil-residential-backyards-start-EBADA5168620C5FE", "After the first encounter", "After exiting the graveyard area", "mg_graveyard", false},
                     {"bil-residential-house-EBADA5168620C5FE-restartcheckpoint", "RC House backyard", "After jumping from the plank into the house backyard, pre-highschool encounter", "mg_graveyard", false},
                     {"bil-residential-street-start-EBADA5168620C5FE-restartcheckpoint", "RC Outside HighSchool fight start", null, "mg_graveyard", false},
+                    {"bill-no-battery-EBADA5168620C5FE", "Graveyard completion", "When the Highschool window cutscene trigger", "mg_graveyard", false},
                     {"bill-no-battery-EBADA5168620C5FE", "Graveyard completion", "When the Highschool window cutscene trigger", "mg_graveyard", true},
                 // High school escape
                 {"mg_highschoolescape", "——High school escape", null, "mg_bill", true},
                     {"bil-highschool-gym-fight-EBADA5168620C5FE-restartcheckpoint", "RC Gym fight start", null, "mg_highschoolescape", false},
                     {"bill-find-truck-EBADA5168620C5FE", "CS Ladder", "When the ladder cutscene starts playing", "mg_highschoolescape", false},
-                    {"bil-escape-outro-EBADA5168620C5FE", "Truck scape", "After getting on the truck, when the cutscene starts", "mg_highschoolescape", true},
+                    {"bil-escape-outro-EBADA5168620C5FE", "Truck scape", "After getting on the truck, when the cutscene starts", "mg_highschoolescape", false},
+                    {"hun-underpass-intro-EBADA5168620C5FE", "Truck scape (After skip)", "After getting on the truck, after skipping cutscene", "mg_highschoolescape", true},
             
             // PITTSBURGH
             {"mg_pittsburgh", "Pittsburgh", null, "main_game", true},
@@ -263,13 +269,15 @@ startup
                     {"hun-hotel-servicearea-infected-nest-ambush-EBADA5168620C5FE-restartcheckpoint", "RC Basement Fight Start", "Basement when you trigger restart encounter", "mg_hotellobby", false},
                     {"hun-hotel-kitchen-restaurant-fight-EBADA5168620C5FE", "Restaurant kitchen", "Entering the kitchen", "mg_hotellobby", false},
                     {"hun-ellie-gun-EBADA5168620C5FE", "CS Ellie saves Joel", "After Ellie shoots the bad guy and the cutscene starts", "mg_hotellobby", false},
-                    {"hun-ellie-rifle-EBADA5168620C5FE", "Hotel Lobby completion", "After exiting the hotel and when the financial discrict cutscene trigger", "mg_hotellobby", true},
+                    {"hun-ellie-rifle-EBADA5168620C5FE", "Hotel Lobby completion", "After exiting the hotel and when the financial discrict cutscene trigger", "mg_hotellobby", false},
+                    {"hun-financial-plaza-fight-EBADA5168620C5FE", "Hotel Lobby completion (After skip)", "After exiting the hotel and when the financial discrict after skipping cutscene", "mg_hotellobby", true},
                 // Financial district
                 {"mg_financialdistrict", "——Financial district", null, "mg_pittsburgh", true},
                     {"hun-ellie-rifle-post-EBADA5168620C5FE", "CS Financial district 1st enconter end", "When Ellie's cutscene trigger", "mg_financialdistrict", false},
                     {"hun-financial-libertyave-fight-EBADA5168620C5FE-restartcheckpoint", "RC Financial district plaza fight start", null, "mg_financialdistrict", false},
                     {"hun-financial-libertyave-fireescape-EBADA5168620C5FE", "Financial district plaza fight end", "After restart checkpoint", "mg_financialdistrict", false},
-                    {"hun-meet-henry-sam-1-EBADA5168620C5FE", "Financial district completion", "After meeting Henry and Sam for the first time and when the cutscene trigger", "mg_financialdistrict", true},
+                    {"hun-meet-henry-sam-1-EBADA5168620C5FE", "Financial district completion", "After meeting Henry and Sam for the first time and when the cutscene trigger", "mg_financialdistrict", false},
+                    {"hun-camp-apartment-start-EBADA5168620C5FE", "Financial district completion (After skip)", "After meeting Henry and Sam for the first time after skipping cutscene", "mg_financialdistrict", true},
                 // Escape the city
                 {"mg_escapethecity", "——Escape the city", null, "mg_pittsburgh", true},
                     {"hun-camp-alley-post-fight-EBADA5168620C5FE", "Toy store fight end", "After killing the enemies at the back of the Toy store", "mg_escapethecity", false},
@@ -290,19 +298,22 @@ startup
                 {"mg_suburbs", "——Suburb", null, "mg_thesuburbs", true},
                     {"sub-sniper-start-EBADA5168620C5FE-restartcheckpoint", "RC When dropping in sniper street", null, "mg_suburbs", false},
                     {"sub-sniper-chase-start-EBADA5168620C5FE-DISABLE BECAUSE I'M NOT ABLE TO MAKE IT ONLY SPLIT WHEN RC BECAUSE THERE IS A LOADING SCREEN DURING THE BLACK SCREEN-restartcheckpoint", "RC Sniper death, during black screen DONT WORK", "After killing that annoying sniper", "mg_suburbs", false},
-                    {"sub-sniper-outro-EBADA5168620C5FE", "Suburbs completion", "When the final cutscene is trigger", "mg_suburbs", true},
+                    {"sub-sniper-outro-EBADA5168620C5FE", "Suburbs completion", "When the final cutscene is trigger", "mg_suburbs", false},
+                    {"tom-path-start-EBADA5168620C5FE", "Suburbs completion (After skip)", "After the final cutscene is skipped", "mg_suburbs", true},
             // TOMMY'S DAM
             {"mg_dam", "Tommy's Dam", null, "main_game", true},
                 // Hydroelectric dam
                 {"mg_hydroelectricdam", "——Hydroelectric dam", null, "mg_dam", true},
                     {"tom-reunited-with-tommy-EBADA5168620C5FE", "CS Gate", "When the cutscene starts", "mg_hydroelectricdam", false},
                     {"tom-what-to-do-with-ellie-EBADA5168620C5FE", "CS before fight begin", "When Joel enters the room and the cutscene starts playing", "mg_hydroelectricdam", false},
-                    {"tom-ellie-is-gone-EBADA5168620C5FE", "Hydroelectric dam completion", "When Maria's cutscene, after the pump room fight is done", "mg_hydroelectricdam", true},
+                    {"tom-ellie-is-gone-EBADA5168620C5FE", "Hydroelectric dam completion", "When Maria's cutscene, after the pump room fight is done", "mg_hydroelectricdam", false},
+                    {"tom-road-find-ellie-start-EBADA5168620C5FE", "Hydroelectric dam completion (After skip)", "After Maria's cutscene is skipped, after the pump room fight is done", "mg_hydroelectricdam", true},
                 // Ranch house
                 {"mg_ranchhouse", "——Ranch house", null, "mg_dam", true},
                     {"tom-road-find-ellie-post-ambush-EBADA5168620C5FE-restartcheckpoint", "RC Ambush fight end", "After killing those annoying guys", "mg_ranchhouse", false},
                     {"tom-ellie-reunite-EBADA5168620C5FE", "CS In ranch house with Ellie", "When the cutscene trigger", "mg_ranchhouse", false},
-                    {"tom-bye-tommy-1-EBADA5168620C5FE", "Ranch house completion", "After leaving the ranch house and the cutscene trigger", "mg_ranchhouse", true},
+                    {"tom-bye-tommy-1-EBADA5168620C5FE", "Ranch house completion", "After leaving the ranch house and the cutscene trigger", "mg_ranchhouse", false},
+                    {"uni-start-1-EBADA5168620C5FE", "Ranch house completion (After skip)", "After leaving the ranch house and after cutscene is skipped", "mg_ranchhouse", true},
             
             // THE UNIVERSITY
             {"mg_university", "The University", null, "main_game", true},
@@ -326,7 +337,8 @@ startup
                     {"lak-mine-david-breaks-door-EBADA5168620C5FE-restartcheckpoint", "RC Coal mine 1st encounter end", "When the fight end", "mg_thehunt", false},
                     {"lak-mine-flee-down-hall-EBADA5168620C5FE", "Coal mine 1st encounter end", "After David breaks the door, while walking throug the hall way", "mg_thehunt", false},
                     {"lak-mine-close-door-igc-EBADA5168620C5FE-restartcheckpoint", "RC Coal mine ladder", "After climbing the ladder", "mg_thehunt", false},
-                    {"lak-shack-reveal-EBADA5168620C5FE", "The hunt completion", "When David's cutscene at the coal mines trigger", "mg_thehunt", true},
+                    {"lak-shack-reveal-EBADA5168620C5FE", "The hunt completion", "When David's cutscene at the coal mines trigger", "mg_thehunt", false},
+                    {"lak-ellie-leaves-hideout-on-horse-igc-pre-EBADA5168620C5FE", "The hunt completion (After skip)", "After David's cutscene at the coal mines is skipped", "mg_thehunt", true},
                 // Cabin resort
                 {"mg_cabinresort", "——Cabin resort", null, "mg_lakeside", true},
                     {"lak-resort-beach-fight-EBADA5168620C5FE", "Horse segment end", "Afther the scripted horse death animation", "mg_cabinresort", false},
@@ -335,7 +347,8 @@ startup
                     {"lak-town-steakhouse-david-find-ellie-igc-EBADA5168620C5FE", "David Fight Start", "When the E prompt on the door is press", "mg_cabinresort", false},
                     {"lak-town-approach-joel-EBADA5168620C5FE", "Joel's running section start", "When Joels arrive to Silver Lake", "mg_cabinresort", false},
                     {"lak-town-steakhouse-finale-EBADA5168620C5FE", "Joel reaches the steakhouse",null, "mg_cabinresort", false},
-                    {"lak-kill-david-EBADA5168620C5FE", "Cabin resort completion", "When the final cutscene at the steakhouse is trigger", "mg_cabinresort", true},
+                    {"lak-kill-david-EBADA5168620C5FE", "Cabin resort completion", "When the final cutscene at the steakhouse is trigger", "mg_cabinresort", false},
+                    {"wild-start-1-EBADA5168620C5FE", "Cabin resort completion (After skip)", "After the final cutscene at the steakhouse is skipped", "mg_cabinresort", true},
             
             // BUS DEPOT
             {"mg_bus", "Bus Depot", null, "main_game", true},
@@ -348,7 +361,8 @@ startup
                     {"wild-3-underground-combat-start-EBADA5168620C5FE-restartcheckpoint", "RC Stealth section start", "Again, more like a running section...", "mg_undergroundtunnel", false},
                     {"wild-3-flooded-tunnel-EBADA5168620C5FE", "Stealth section cleared", "After jumping down from the trailer", "mg_undergroundtunnel", false},
                     {"wild-3-pallet-puzzle-7-end-DCAA3B8B07500953", "Puzzle section cleared", "When going up the stairs", "mg_undergroundtunnel", false},
-                    {"wld-ellie-drowns-EBADA5168620C5FE", "Underground tunnel completion", "When Ellie's drawning cutscene is trigger", "mg_undergroundtunnel", true},
+                    {"wld-ellie-drowns-EBADA5168620C5FE", "Underground tunnel completion", "When Ellie's drawning cutscene is trigger", "mg_undergroundtunnel", false},
+                    {"end-lab-intro-EBADA5168620C5FE", "Underground tunnel completion (After skip)", "After Ellie's drawning cutscene is skipped", "mg_undergroundtunnel", true},
             
             // THE FIREFLY LAB
             {"mg_lab", "The Firefly Lab", null, "main_game", true},
